@@ -1,0 +1,52 @@
+.content {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-size: .9em;
+    font-weight: 100;
+    color:navy;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+
+
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: black;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+.list {
+    list-style-type: decimal;
+}
+.list li {
+    margin-bottom: 20px;
+}
+
+.image {
+    text-align: center;
+}
+img {
+    width: 10em;
+    display: block;
+    margin: 0 auto;
+}
