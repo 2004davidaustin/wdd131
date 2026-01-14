@@ -1,6 +1,28 @@
+ :root {
+    --background: white;
+    --text-color: black;
+    --accent-color: navy;
+    --border-color: darkgrey;
+ }
+
+
+
+
+ body {
+    background: var(--background);
+    color: var(--text-color);
+ }
+
 .content {
-    margin: 20px auto;
     max-width: 500px;
+    border: 1px solid var(--border-color);
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background);
+    z-index: 1;
 }
 
 
@@ -8,8 +30,9 @@
 
 h1 {
     text-align: center;
-    margin: 20px auto;
-    font-weight: 400;
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -17,18 +40,23 @@ h2 {
     text-align: center;
     font-size: .9em;
     font-weight: 100;
-    color:navy;
+    color: var(--accent-color);
     margin: 0 auto;
     letter-spacing: 3px;
 }
 
 
 
+
 hr {
     height: 1px;
     border: none;
-    background-color: black;
+    background-color: var(--border-color);
 }
+
+
+
+
 
 
 .italic {
@@ -49,4 +77,14 @@ img {
     width: 10em;
     display: block;
     margin: 0 auto;
+}
+
+
+
+
+
+#theme-select {
+    margin: 1rem;
+    position: relative;
+    z-index: 2;
 }
