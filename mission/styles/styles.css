@@ -1,90 +1,72 @@
- :root {
-    --background: white;
-    --text-color: black;
-    --accent-color: navy;
-    --border-color: darkgrey;
- }
-
-
-
-
- body {
-    background: var(--background);
-    color: var(--text-color);
- }
-
-.content {
-    max-width: 500px;
-    border: 1px solid var(--border-color);
-    padding: 50px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--background);
-    z-index: 1;
+:root {
+  --background: white;
+  --text-color: black;
+  --accent-color: navy;
+  --border-color: darkgrey;
 }
 
+body {
+  background: var(--background);
+  color: var(--text-color);
+}
 
-
+.content {
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background);
+  z-index: 1;
+}
 
 h1 {
-    text-align: center;
-    margin: 10px auto;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2px;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 h2 {
-    text-align: center;
-    font-size: .9em;
-    font-weight: 100;
-    color: var(--accent-color);
-    margin: 0 auto;
-    letter-spacing: 3px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 100;
+  color: var(--accent-color);
+  margin: 0 auto;
+  letter-spacing: 3px;
 }
-
-
-
 
 hr {
-    height: 1px;
-    border: none;
-    background-color: var(--border-color);
+  height: 1px;
+  border: none;
+  background-color: var(--border-color);
 }
 
-
-
-
-
-
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .list {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 .list li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .image {
-    text-align: center;
+  text-align: center;
 }
 img {
-    width: 10em;
-    display: block;
-    margin: 0 auto;
+  width: 10em;
+  display: block;
+  margin: 0 auto;
 }
 
-
-
-
-
 #theme-select {
-    margin: 1rem;
-    position: relative;
-    z-index: 2;
+  margin: 1rem;
+  position: relative;
+  z-index: 2;
 }
