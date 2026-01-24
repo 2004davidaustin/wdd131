@@ -5,6 +5,18 @@
   --border-color: darkgrey;
 }
 
+body.dark {
+  --background: #333;
+  --text-color: white;
+  --accent-color: lightblue;
+  --border-color: #888888;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+}
+
 body {
   background: var(--background);
   color: var(--text-color);
