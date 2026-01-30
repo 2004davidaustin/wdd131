@@ -39,7 +39,7 @@ for file in html_files:
         folder_name = Path(file['name']).stem
     
     file_items.append(f"""        <div class="file-item">
-            <a href="{url}" target="_blank">{folder_name}</a>
+            <a href="{url}" target="">{folder_name}</a>
             <div class="file-path">{file['path']}</div>
         </div>""")
 
