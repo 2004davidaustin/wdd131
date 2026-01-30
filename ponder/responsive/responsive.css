@@ -53,14 +53,14 @@ nav a:hover {
   transition: 0.4s;
 }
 .change .bar1 {
-  transform: translate(0, 8.5px) rotate(-45deg);
+  transform: translate(0, 8.6px) rotate(-45deg);
 }
 .change .bar2 {
   opacity: 0;
 }
 
 .change .bar3 {
-  transform: translate(0, -8.5px) rotate(45deg);
+  transform: translate(0, -8.6px) rotate(45deg);
 }
 footer {
   text-align: center;
@@ -76,9 +76,13 @@ footer {
   }
   nav a {
     display: inline;
+    border: none;
   }
   nav {
-    text-align: right;
+    text-align: center;
+  }
+  .hide {
+    display: block;
   }
 }
 
