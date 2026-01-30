@@ -7,11 +7,16 @@ body {
   padding: 0;
 }
 
-header {
+header,
+footer {
   background-color: #3333cc;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+footer {
+  margin-top: 30px;
 }
 
 h2 {
@@ -19,12 +24,29 @@ h2 {
   margin: 30px 0;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #3333cc;
+nav a,
+.menu-btn {
   color: white;
-  margin-top: 30px;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-btn {
+  text-decoration: none;
+}
+
+nav a:hover,
+.menu-btn:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.hide-nav {
+  display: none;
 }
 
 #gallery {
@@ -49,35 +71,6 @@ footer {
   width: 300px;
   height: 300px;
   object-fit: cover;
-}
-
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: underline;
-  padding: 0 15px;
-  display: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-.menu-btn {
-  cursor: pointer;
-  border: none;
-  color: white;
-  background-color: transparent;
-  font-size: 16px;
-  padding: 10px 20px;
-}
-
-.menu-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
 }
 
 @media (min-width: 800px) {
