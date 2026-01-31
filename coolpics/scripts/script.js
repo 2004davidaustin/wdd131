@@ -3,11 +3,8 @@
 const btn = document.querySelector(".menu-btn");
 const menu = document.querySelector("nav");
 
-btn.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-  menu.classList.toggle("hide-nav");
-}
+// toggle nav
+btn.addEventListener("click", () => menu.classList.toggle("hide-nav"));
 
 // MODAL CODE
 
