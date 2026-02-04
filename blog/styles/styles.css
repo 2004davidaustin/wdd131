@@ -22,10 +22,6 @@ hr {
   margin: 20px 0;
 }
 
-h1 {
-  color: black;
-}
-
 h2 {
   color: var(--secondary-color);
 }
@@ -33,6 +29,8 @@ h2 {
 hr {
   border: 1px solid var(--highlight-color);
 }
+
+/* main menu */
 
 nav ul {
   display: flex;
@@ -52,6 +50,8 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* book thing */
 
 .book-section hr {
   margin: 45px 0;
