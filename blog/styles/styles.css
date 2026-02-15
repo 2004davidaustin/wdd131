@@ -53,11 +53,15 @@ nav a:hover {
 
 /* book thing */
 
-.book-section hr {
+.book-article {
+  margin-bottom: 100px;
+}
+
+.book-article hr {
   margin: 45px 0;
 }
 
-.book-section p {
+.book-article p {
   margin: 15px 15px;
 }
 
@@ -77,15 +81,16 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  .book-section {
+  .book-article {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: 150px 30px 1fr;
+    grid-template-columns: 175px 30px 1fr;
     justify-content: center;
   }
 
-  .book-section hr {
+  .book-article hr {
     display: none;
   }
   
