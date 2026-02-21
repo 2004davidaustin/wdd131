@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A creditcard checkout page" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Credit Card Checkout</title>
+  </head>
+  <body>
+    <main id="card-container">
+      <section class="checkout-summary">
+        <h1>Credit Card Checkout</h1>
+        <p class="total">TOTAL: <strong>$19.99</strong></p>
+      </section>
+      <form id="card-form" autocomplete="off">
+        <div id="card-grid">
+          <div id="card-1" class="card-section">
+            <div class="card-image" aria-hidden="true">💳</div>
+            <div class="chip-image">
+              <img src="images/creditcard-chip.png" alt="Credit card chip" />
+            </div>
+            <div id="card-number-container">
+              <label for="creditCardNumber">Credit Card Number</label>
+              <input
+                type="text"
+                id="creditCardNumber"
+                name="creditCardNumber"
+                pattern="\d{16}"
+                inputmode="numeric"
+                maxlength="16"
+                placeholder="Enter 16 digits"
+                required
+                aria-label="Credit Card Number"
+              />
+            </div>
+            <div id="cardholder-container">
+              <label for="cardholder">Cardholder Name</label>
+              <input
+                type="text"
+                id="cardholder"
+                name="cardholder"
+                placeholder="Jim Boe"
+                required
+                aria-label="Cardholder Name"
+              />
+            </div>
+            <div id="expiration-container">
+              <label for="expMonth">Expiration</label>
+              <div class="expiration-fields">
+                <input
+                  type="text"
+                  id="expMonth"
+                  name="expMonth"
+                  placeholder="MM"
+                  pattern="\d{2}"
+                  inputmode="numeric"
+                  maxlength="2"
+                  required
+                  aria-label="Expiration Month"
+                />
+                <span>/</span>
+                <input
+                  type="text"
+                  id="expYear"
+                  name="expYear"
+                  placeholder="YY"
+                  pattern="\d{2}"
+                  inputmode="numeric"
+                  maxlength="2"
+                  required
+                  aria-label="Expiration Year"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="card-2" class="card-section">
+            <div id="black-band" aria-hidden="true"></div>
+            <div class="three-numbers-container">
+              <label for="threeNumbers">CVC/CVV</label>
+              <input
+                type="text"
+                id="threeNumbers"
+                name="threeNumbers"
+                placeholder="XXX"
+                pattern="\d{3,4}"
+                inputmode="numeric"
+                maxlength="4"
+                required
+                aria-label="CVC or CVV"
+              />
+            </div>
+          </div>
+          <div class="form-actions">
+          <button type="submit">Submit</button>
+        </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
