@@ -1,0 +1,62 @@
+:root {
+    --primary: #be6a43;
+    --secondary: #f7c780;
+    --primary-dark: #97593c;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 120px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image-container {
+    height: 350px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-container {
+    background-color: var(--primary);
+    padding: 0 20px;
+}
+
+.stats-container {
+    background-color: var(--secondary);
+    padding: 0 20px;
+}
+
+.button-container {
+    background-color: var(--secondary);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: background-color 0.5s ease;
+}
+
+.button-container button:hover {
+    background-color: var(--primary-dark);
+}
