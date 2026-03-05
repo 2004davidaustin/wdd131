@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="A cool recipe book" />
+    <meta description="A recipe book website" />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/main.js"></script>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Your Title" />
-    <meta property="og:description" content="Your Description" />
+    <meta property="og:title" content="RecipeBook" />
+    <meta property="og:description" content="A recipe book website" />
     <meta property="og:url" content="Your URL" />
-    <meta property="og:image" content="social-preview-image.png" />
+    <meta property="og:image" content="images/social-preview-image.png" />
 
     <!-- X Card -->
     <meta name="twitter:card" content="Social Preview Image" />
-    <meta name="twitter:title" content="Your Title" />
-    <meta name="twitter:description" content="Your Description" />
-    <meta name="twitter:image" content="social-preview-image.png" />
+    <meta name="twitter:title" content="RecipeBook" />
+    <meta name="twitter:description" content="A recipe book website" />
+    <meta name="twitter:image" content="images/social-preview-image.png" />
 
     <!-- One favicon (ICO works everywhere) -->
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
 
     <!-- One Apple Touch Icon (iOS home screen) -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -29,15 +29,42 @@
     <title>Recipe Book</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div id="title">
+        <img src="images/recipe-book.png" alt="Recipe Book Logo" />
+        <h1>RecipeBook</h1>
+      </div>
+
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Find a recipe" />
+        <div class="vl"></div>
+        <button id="search-button"><img src="images/search.svg" alt="Search Button" /></button>
+      </div>
+
+      <hr />
+    </header>
     <main>
-      <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star">⭐</span>
-        <span aria-hidden="true" class="icon-star-empty">☆</span>
-      </span>
+      <section class="recipe">
+        <div class="image"><img src="images/apple-crisp.jpg" alt="Apple Crisp Pie" /></div>
+
+        <div>
+          <button class="tag">dessert</button>
+          <h2>Apple Crisp</h2>
+
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+
+          <p class="hidden-on-phone">
+            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm
+            with a scoop of vanilla ice cream.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="social">
