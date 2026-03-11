@@ -108,10 +108,33 @@ a img {
   width: 40px;
   height: auto;
 }
+
+/*
+@media (min-width: 640px) {
+    .hidden-on-phone {
+    display: block;
+  }
+
+  .recipe-info {
+    display: flex;
+  }
+  .recipe-info div {
+    width: 325px;
+  }
+}
+*/
+
 @media (min-width: 1200px) {
   body p,
   body a {
     font-size: 2em;
+  }
+
+  .recipe-info {
+    display: block;
+  }
+  .recipe-info div {
+    width: 325px;
   }
   body button,
   body span {
