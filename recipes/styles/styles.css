@@ -35,7 +35,7 @@ header {
   border-radius: 4px;
   margin: 0 auto;
 }
-#search-input {
+#searchInput {
   flex: 1;
   min-width: 0;
   border: none;
@@ -76,6 +76,7 @@ hr {
 }
 .recipe img {
   width: 100%;
+  max-width: 550px;
   margin-bottom: 20px;
 }
 .recipe h2 {
@@ -134,7 +135,7 @@ a img {
     display: block;
   }
   .recipe-info div {
-    width: 325px;
+    flex: 1;
   }
   body button,
   body span {
@@ -144,6 +145,10 @@ a img {
     display: flex;
     gap: 20px;
     max-width: 1300px;
+  }
+  .image {
+    width: 400px;
+    flex-shrink: 0;
   }
   .recipe h2 {
     font-size: 4em;

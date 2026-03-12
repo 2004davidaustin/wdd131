@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A recipe book website" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/main.js"></script>
+    <script defer src="scripts/main.js"></script>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website" />
@@ -36,38 +36,21 @@
       </div>
 
       <div id="search-container">
-        <input type="text" id="search-input" placeholder="Find a recipe" />
+        <input type="text" id="searchInput" placeholder="Find a recipe" />
         <div class="vl"></div>
-        <button id="search-button"><img src="images/search.svg" alt="Search Button" /></button>
+        <button id="searchButton"><img src="images/search.svg" alt="Search Button" /></button>
       </div>
 
       <hr />
     </header>
     <main>
-      <section class="recipe">
-        <div class="image"><img src="images/apple-crisp.jpg" alt="Apple Crisp Pie" /></div>
 
-        <div class="recipe-info">
-          <div>
-          <button class="tag">dessert</button>
-          <h2>Apple Crisp</h2>
+      <div id="recipes">
 
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
+      
 
-          </div>
+      </div>
 
-          <p class="hidden-on-phone">
-            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm
-            with a scoop of vanilla ice cream.
-          </p>
-        </div>
-      </section>
     </main>
     <footer>
       <div class="social">
