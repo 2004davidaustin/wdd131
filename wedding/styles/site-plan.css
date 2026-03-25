@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --background: #f9f2db;
+  --text: #362923;
+  --accent: #774944;
+  --accent2: #887155;
+
+  --font-cursive: "Bonheur Royale", system-ui, Arial, sans-serif;
+  --font-sanserif: "Outfit", system-ui, Arial, sans-serif;
+}
+
+
+/* Base layout */
+body {
+  font-family: var(--font-sanserif);
+  color: var(--text);
+  background-color: var(--background); /* page background using variable */
+  font-size: 1.75rem;
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+  text-align: center; /* center all page text */
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+section {
+  margin: 6rem 0;
+}
+
+#title {
+  margin-top: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-cursive);
+  font-weight: 400; /* normal */
+  font-size: 3rem;
+  line-height: 0.9;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600; /* semi-bold */
+}
+
+h3 {
+  font-weight: 500; /* normal */
+}
+
+.button {
+  display: inline-block;
+  border-radius: 0.3em;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+
+  background-color: var(--accent);
+  color: var(--background);
+  text-decoration: none;
+  font-family: var(--font-sanserif); /* ensure button text uses the site font */
+  font-size: inherit;
+  margin: 10px;
+}
+.button:hover {
+  background-color: var(--background);
+  color: var(--accent);
+
+  outline-style: solid;
+  outline-color: var(--accent);
+  outline-width: 0.15em;
+}
+
+/* Hero image — apply to the main banner <img> to span the viewport width,
+   center-crop the image, and cap the height so the focal point stays near the center */
+#hero-image {
+  display: block;
+  width: 100vw; /* fill left-to-right */
+  margin-left: calc(50% - 50vw); /* escape centered container */
+  height: auto;
+  max-height: 60vh; /* cap height (adjust as needed) */
+  object-fit: cover; /* crop to fill while preserving aspect ratio */
+  object-position: center; /* crop centered (not head/foot) */
+}
+
+
+#hero {
+  margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --background: #f9f2db;
+  --text:        #362923;
+  --accent:      #774944;
+  --accent2:     #887155;
+  --font-cursive:   "Bonheur Royale", system-ui, Arial, sans-serif;
+  --font-sanserif:  "Outfit", system-ui, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── BASE — matches your site's body exactly ── */
+body {
+  font-family: var(--font-sanserif);
+  color: var(--text);
+  background-color: var(--background);
+  font-size: 1.75rem;
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+section {
+  margin: 6rem 0;
+}
+
+/* ── HEADINGS — matches your site ── */
+h1 {
+  font-family: var(--font-cursive);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* ── BUTTON — copied from your style.css ── */
+.button {
+  display: inline-block;
+  border-radius: 0.3em;
+  padding: 0.3em 0.6em;
+  background-color: var(--accent);
+  color: var(--background);
+  text-decoration: none;
+  font-family: var(--font-sanserif);
+  font-size: inherit;
+}
+.button:hover {
+  background-color: var(--background);
+  color: var(--accent);
+  outline: 0.15em solid var(--accent);
+}
+
+/* ── HEADER ── */
+header {
+  margin: 3rem 0 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-top: 0.5rem;
+}
+
+/* ── TABLE ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+th {
+  background: var(--accent);
+  color: var(--background);
+  padding: 0.5rem 0.75rem;
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #d9cebc;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: rgba(136, 113, 85, 0.1);
+}
+
+code {
+  background: #e8dfc8;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
+/* ── LOGO ── */
+.logo-img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0.75rem auto;
+  border: 2px solid var(--accent2);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+/* ── COLOR SWATCHES ── */
+.color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.swatch {
+  text-align: center;
+  width: 90px;
+}
+
+.color-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 0.4rem;
+}
+
+.swatch p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.swatch code {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.swatch small {
+  font-size: 0.7rem;
+  color: var(--accent2);
+}
+
+/* ── FONT SAMPLES ── */
+.font-samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.font-sample {
+  background: #ede5cf;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* matches your h1 exactly */
+.font-heading {
+  font-family: var(--font-cursive);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 0.9;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+/* matches your body text */
+.font-body {
+  font-family: var(--font-sanserif);
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+/* ── WIREFRAMES ── */
+.wireframe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.wireframe-grid figure {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 200px;
+  text-align: center;
+}
+
+.wireframe-grid img {
+  width: 100%;
+  border: 1px solid #c8bfad;
+  border-radius: 0.5rem;
+}
+
+.wireframe-grid figcaption {
+  font-size: 0.8rem;
+  color: var(--accent2);
+  margin-top: 0.35rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #d9cebc;
+  font-size: 1rem;
+  color: var(--accent2);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 450px) {
+  .wireframe-grid figure {
+    flex: 1 1 100%;
+  }
+  .font-samples {
+    flex-direction: column;
+  }
+}

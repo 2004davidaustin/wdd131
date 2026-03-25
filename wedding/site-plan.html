@@ -1,0 +1,176 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Plan – Kenia & David Wedding</title>
+  <link rel="stylesheet" href="styles/site-plan.css" />
+        <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <h1>Kenia & David</h1>
+    <p class="subtitle">Wedding Website — Site Plan</p>
+  </header>
+
+  <main>
+
+
+
+    <img id="hero-image" src="images/sitting1.JPG" alt="Kenia y David sentados juntos sonriendo" />
+
+        <a class="button" href="contactus.html">Button Example</a>
+
+
+    <!-- Headers -->
+    <h1>H1 Text</h1>
+    <h2>H2 Text</h2>
+    <h3>H3 Text</h3>
+    <p>Paragraph text</p>
+
+
+    <!-- PURPOSE & AUDIENCE -->
+    <section id="purpose">
+      <h2>Purpose & Audience</h2>
+      <p>
+        This is a wedding invitation website for myself and my fiancée, who is from Mexico City,
+        where we are holding our wedding. The site acts as a digital invitation — giving guests
+        all the info they need and letting them RSVP online. It is intended for Mexican family
+        members and friends, primarily Spanish-speaking, who will mostly be viewing it on mobile.
+      </p>
+    </section>
+
+    <!-- DYNAMIC ELEMENTS -->
+    <section id="dynamic">
+      <h2>Dynamic Elements</h2>
+
+      <h3>Slide-Out Navigation</h3>
+      <p><code>initNav()</code> toggles an <code>open</code> class on the nav tray when the hamburger button is clicked.</p>
+
+      <h3>Countdown Timer</h3>
+      <p><code>initCountdown()</code> starts an interval calling <code>updateDisplay()</code> every second. A conditional checks if the wedding date has passed and swaps the timer for a celebration message if so.</p>
+
+      <h3>Wish Wall</h3>
+      <p><code>addWish()</code> listens for form submission and validates that neither field is empty. Each wish is stored as an object <code>{ name, message, date }</code> in a <code>wishes</code> array. <code>renderWishes()</code> uses <code>forEach</code> to build and insert wish cards into the DOM.</p>
+
+      <table>
+        <tr><th>Requirement</th><th>Where</th></tr>
+        <tr><td>Multiple functions</td><td><code>initNav</code>, <code>initCountdown</code>, <code>updateDisplay</code>, <code>addWish</code>, <code>renderWishes</code></td></tr>
+        <tr><td>DOM interaction</td><td>Nav tray, countdown display, wish cards</td></tr>
+        <tr><td>Event listeners</td><td>Click (nav), submit (wish wall)</td></tr>
+        <tr><td>Conditional branching</td><td>Date check (countdown), field validation (wish wall), open/close state (nav)</td></tr>
+        <tr><td>Objects & arrays</td><td>Wishes stored as objects in an array; <code>forEach</code> renders each card</td></tr>
+      </table>
+    </section>
+
+    <!-- LOGO -->
+    <section id="logo">
+      <h2>Logo</h2>
+      <img src="images/favicon.ico" alt="K&D logo" class="logo-img" />
+      <p>Custom favicon using my initials K&D.</p>
+    </section>
+
+    <!-- COLORS & FONTS -->
+    <section id="colors-fonts">
+      <h2>Colors & Fonts</h2>
+
+      <div class="color-swatches">
+        <div class="swatch">
+          <div class="color-box" style="background:#f9f2db; border:1px solid #ccc;"></div>
+          <p>Parchment</p>
+          <code>#f9f2db</code>
+          <small>Background</small>
+        </div>
+        <div class="swatch">
+          <div class="color-box" style="background:#362923;"></div>
+          <p>Dark Brown</p>
+          <code>#362923</code>
+          <small>Text</small>
+        </div>
+        <div class="swatch">
+          <div class="color-box" style="background:#774944;"></div>
+          <p>Dusty Rose</p>
+          <code>#774944</code>
+          <small>Accent</small>
+        </div>
+        <div class="swatch">
+          <div class="color-box" style="background:#887155;"></div>
+          <p>Warm Tan</p>
+          <code>#887155</code>
+          <small>Accent 2</small>
+        </div>
+      </div>
+
+      <div class="font-samples">
+        <div class="font-sample">
+          <p class="font-heading">Bonheur Royale</p>
+          <small>Headings — Google Fonts</small>
+        </div>
+        <div class="font-sample">
+          <p class="font-body">Outfit</p>
+          <small>Body & UI — Google Fonts</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section id="content">
+      <h2>Content</h2>
+
+      <h3>Home Page</h3>
+      <p>
+        The main page includes a hero photo of the couple, a save-the-date heading with the
+        wedding date and an RSVP button, a live countdown timer, the venue location with an
+        embedded Street View map, gift and bank transfer info with a copy button, the event
+        timeline, dress code color swatches, and the wish wall form.
+      </p>
+
+      <h3>About Us Page</h3>
+      <p>
+        A page sharing our story — how we met, how we got to know each other, and why we fell in love.
+      </p>
+
+      <h3>Contact Page</h3>
+      <p>A standard contact page where guests can reach out with any questions.</p>
+    </section>
+
+    <!-- WIREFRAMES -->
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <div class="wireframe-grid">
+        <figure>
+          <img src="images/weddingsite-1.jpg" alt="Wireframe 1" />
+          <figcaption>1 – Main Page</figcaption>
+        </figure>
+        <figure>
+          <img src="images/weddingsite-2.jpg" alt="Wireframe 2" />
+          <figcaption>2 – Main Page with Nav Tray</figcaption>
+        </figure>
+        <figure>
+          <img src="images/weddingsite-3.jpg" alt="Wireframe 3" />
+          <figcaption>3 – Contact page</figcaption>
+        </figure>
+        <figure>
+          <img src="images/weddingsite-4.jpg" alt="Wireframe 4" />
+          <figcaption>4 – Get to know us page</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kenia & David</p>
+  </footer>
+
+</body>
+</html>

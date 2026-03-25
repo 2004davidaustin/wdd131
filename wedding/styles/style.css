@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --background: #f9f2db;
+  --text: #362923;
+  --accent: #774944;
+  --accent2: #887155;
+
+  --font-cursive: "Bonheur Royale", system-ui, Arial, sans-serif;
+  --font-sanserif: "Outfit", system-ui, Arial, sans-serif;
+}
+
+/* Base layout */
+body {
+  font-family: var(--font-sanserif);
+  color: var(--text);
+  background-color: var(--background); /* page background using variable */
+  font-size: 1.75rem;
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+  text-align: center; /* center all page text */
+  position: relative;
+  z-index: 1;
+}
+
+#background-flowers {
+  position: absolute;
+  top: 26vh;
+  left: -260px;
+  width: 400px;
+  height: 400px;
+  background-image: url("../images/brown-boquet.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+  transform: rotate(135deg);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+
+
+section {
+  margin: 6rem 0;
+}
+
+#title {
+  margin-top: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-cursive);
+  font-weight: 400; /* normal */
+  font-size: 3rem;
+  line-height: 0.9;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600; /* semi-bold */
+}
+
+h3 {
+  font-weight: 500; /* normal */
+}
+
+/* Mobile square info box — use for small-screen highlighted text */
+.info-box {
+  background: var(--accent2);
+  color: var(--background);
+  font-family: "Courier New", Courier, monospace; /* typewriter-style */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 1rem auto;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: pre-line;
+  font-size: 1.5rem;
+}
+
+
+
+/* Responsive map container */
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  border-radius: 1rem;
+}
+.map-responsive iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.button {
+  border-radius: 0.3em;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+
+  background-color: var(--accent);
+  color: var(--background);
+  text-decoration: none;
+  font-family: var(--font-sanserif); /* ensure button text uses the site font */
+  font-size: inherit;
+}
+.button:hover {
+  background-color: var(--background);
+  color: var(--accent);
+
+  outline-style: solid;
+  outline-color: var(--accent);
+  outline-width: 0.15em;
+}
+
+/* Divider: left text, thin center bar, right link */
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 1rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divider_left {
+  text-align: right;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+}
+.divider_sep {
+  border: var(--accent2) solid;
+  border-width: 1px;
+  width: 1px;
+  height: 2rem;
+  background: var(--accent2);
+  justify-self: center;
+}
+.divider_right {
+  /* make the element shrink-wrap its content and center it in the grid cell
+     so borders/width changes move both edges inward rather than pinning one side */
+  display: inline-block;
+  justify-self: left;
+  text-align: center;
+}
+
+
+
+
+/* Hero image — apply to the main banner <img> to span the viewport width,
+   center-crop the image, and cap the height so the focal point stays near the center */
+#hero-image {
+  display: block;
+  width: 100vw; /* fill left-to-right */
+  margin-left: calc(50% - 50vw); /* escape centered container */
+  height: auto;
+  max-height: 60vh; /* cap height (adjust as needed) */
+  object-fit: cover; /* crop to fill while preserving aspect ratio */
+  object-position: center; /* crop centered (not head/foot) */
+}
+
+
+
+
+#hero {
+  margin: 1rem 0;
+}
+
+
+#location p {
+  margin: 0.75rem 0;
+}
+
+#timeline {
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 600px;
+  color: var(--text); /* the inline SVG uses currentColor */
+}
+#timeline svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#timeline svg .timeline-fill {
+  fill: currentColor;
+}
+#timeline svg .timeline-stroke {
+  stroke: currentColor;
+}
+
+.circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 1rem 0.5rem;
+  /* subtle shadow so light circles read against the background */
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  /* faint border improves contrast for white circles */
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 450px) {
+  #background-flowers {
+  top: 48vh;
+  left: -210px;
+  transform: rotate(135deg);
+  }
+  
+}
+
+@media (min-width: 1044px) {
+  #background-flowers {
+  top: 20vh;
+  left: -36vw;
+  width: 700px;
+  height: 700px;
+  transform: rotate(135deg);
+  }
+  
+}
+
+@media (min-width: 1900px) {
+  #background-flowers {
+    top: 21vw;
+    left: -45vw;
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(135deg);
+  }
+}
+
+
+/* from here these are all messed up and set up for desktop first instead of mobile, i apologize */ 
+
+/* Make the box a true square on phones, center content vertically and horizontally */
+@media (max-width: 450px) {
+  .info-box {
+    width: calc(100% - 1rem); /* leave a bit of margin to edges */
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+}
+
+/* Responsive fallback: stack on narrow screens and hide separator */
+@media (max-width: 450px) {
+  .divider {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .divider_sep {
+    display: none;
+  }
+  .divider_left {
+    text-align: center;
+  }
+  .divider_right {
+    justify-self: center;
+  }
+}
+
+/* Slightly shorter cap on very small screens */
+@media (max-width: 450px) {
+  #hero-image {
+    max-height: 45vh;
+  }
+}
+
+/* svg fix */
+
+/* ensure filled shapes are solid and don't get heavy outlines */
+path,
+rect,
+circle,
+polygon,
+polyline {
+  fill: currentColor;
+  stroke: none;
+}
+/* lines and intended stroke classes use a lighter stroke */
+line {
+  stroke: currentColor;
+  stroke-width: 0.95px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cls-6,
+.cls-8 {
+  stroke: currentColor;
+}
+.cls-8 {
+  stroke-width: 0.85px;
+}
+
+.cls-1 {
+  letter-spacing: 0em;
+}
+.cls-2 {
+  letter-spacing: 0em;
+}
+.cls-3 {
+  font-family: Outfit-Regular, Outfit;
+  font-size: 16px;
+  font-variation-settings: "wght" 400;
+}
+.cls-3,
+.cls-4,
+.cls-5 {
+  fill: currentColor;
+}
+.cls-6,
+.cls-7,
+.cls-8 {
+  fill: none;
+}
+.cls-9 {
+  letter-spacing: -0.02em;
+}
+.cls-10 {
+  letter-spacing: 0em;
+}
+.cls-4 {
+  font-family: Outfit-Light, Outfit;
+  font-variation-settings: "wght" 300;
+  font-weight: 300;
+}
+.cls-4,
+.cls-5 {
+  font-size: 10px;
+}
+.cls-11 {
+  clip-path: url(#clippath-1);
+}
+.cls-12 {
+  letter-spacing: -0.03em;
+}
+.cls-13 {
+  letter-spacing: 0em;
+}
+.cls-14 {
+  letter-spacing: 0em;
+}
+.cls-15 {
+  letter-spacing: 0em;
+}
+.cls-16 {
+  letter-spacing: 0em;
+}
+.cls-5 {
+  font-family: Outfit-Thin, Outfit;
+  font-variation-settings: "wght" 100;
+  font-weight: 200;
+}
+.cls-17 {
+  letter-spacing: -0.03em;
+}
+.cls-18 {
+  letter-spacing: 0em;
+}
+.cls-19 {
+  clip-path: url(#clippath);
+}
