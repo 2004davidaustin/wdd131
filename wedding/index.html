@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="styles/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kenia & David's wedding website" />
     <script src="scripts/main.js" defer></script>
     <link rel="icon" href="images/favicon.ico" />
     <title>Kenia & David | Reserve Your Spot</title>
   </head>
   <body>
     <div id="background-flowers"></div>
-    <header>
+    <header role="banner">
       <div class="header-inner">
         <h3>K&D</h3>
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
@@ -23,11 +24,12 @@
 
     <!-- Nav tray sits outside header, right after it -->
     <div class="nav-overlay" id="nav-overlay"></div>
-    <nav class="nav-tray" id="nav-tray" aria-hidden="true">
+    <nav class="nav-tray" id="nav-tray" role="navigation" aria-label="Primary navigation" aria-hidden="true">
       <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
     </nav>
 
+    <main role="main">
     <!-- hero -->
     <section id="hero">
       <img
@@ -105,9 +107,11 @@
         transfer is greatly appreciated. Thank you!
       </p>
 
-      <p class="info-box">
-        Name: Kenia Lagunes Bank: BBVA CLABE: 123 456 78910111213 1 Account: 123 456 7891 Reference:
-        Wedding Gift
+      <p class="info-box">Name: Kenia Lagunes
+        Bank: BBVA
+        CLABE: 123 456 78910111213 1
+        Account: 123 456 7891
+        Reference: Wedding Gift
       </p>
 
       <a id="copyInfoBtn" class="button" type="button" aria-label="Copy information">Copy Info</a>
@@ -163,8 +167,9 @@
 
       <div class="toast" id="toast"></div>
     </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p>© 2026 Kenia & David</p>
     </footer>
   </body>
