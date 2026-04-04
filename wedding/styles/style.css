@@ -756,19 +756,6 @@ line {
   clip-path: url(#clippath);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT US PAGE */
 
 .aboutus {
@@ -793,8 +780,6 @@ line {
   text-align: center;
   margin: 0 0.5rem;
 }
-
-
 
 @media screen and (min-width: 650px) {
   .aboutus {
@@ -822,7 +807,6 @@ line {
   }
 }
 
-
-
-
-.reverse { flex-direction: row-reverse; }
+.reverse {
+  flex-direction: row-reverse;
+}

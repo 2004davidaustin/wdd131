@@ -5,28 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="scripts/main.js" defer></script>
-        <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
     <title>Kenia & David | Reserve Your Spot</title>
   </head>
   <body>
     <div id="background-flowers"></div>
-<header>
-  <div class="header-inner">
-    <h3>K&D</h3>
-    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </button>
-  </div>
-</header>
+    <header>
+      <div class="header-inner">
+        <h3>K&D</h3>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
+    </header>
 
-<!-- Nav tray sits outside header, right after it -->
-<div class="nav-overlay" id="nav-overlay"></div>
-<nav class="nav-tray" id="nav-tray" aria-hidden="true">
-  <a href="index.html">Home</a>
-  <a href="aboutus.html">About Us</a>
-</nav>
+    <!-- Nav tray sits outside header, right after it -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <nav class="nav-tray" id="nav-tray" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
 
     <!-- hero -->
     <section id="hero">
@@ -55,10 +55,7 @@
         >
       </div>
 
-      <p>
-        You can register for the wedding here! Please confirm before April 30th.
-        Thank you!
-      </p>
+      <p>You can register for the wedding here! Please confirm before April 30th. Thank you!</p>
     </section>
 
     <section>
@@ -74,10 +71,7 @@
       <h2>Location</h2>
       <p>The event will take place at Salón Punta Real:</p>
       <p>
-        <em
-          >Constitución 7, Santa María Aztahuacán, Iztapalapa, 09500 Mexico
-          City.</em
-        >
+        <em>Constitución 7, Santa María Aztahuacán, Iztapalapa, 09500 Mexico City.</em>
       </p>
       <p>We'll be waiting for you there!</p>
 
@@ -106,26 +100,17 @@
       <h2>Gifts</h2>
 
       <p>
-        Your presence is the best gift. However, if you'd like to support us, we
-        have set up a bank account for wedding gifts, as we will not be living in
-        Mexico. Any cash contribution or bank transfer is greatly appreciated.
-        Thank you!
+        Your presence is the best gift. However, if you'd like to support us, we have set up a bank
+        account for wedding gifts, as we will not be living in Mexico. Any cash contribution or bank
+        transfer is greatly appreciated. Thank you!
       </p>
 
-      <p class="info-box">Name: Kenia Lagunes
-        Bank: BBVA
-        CLABE: 123 456 78910111213 1
-        Account: 123 456 7891
-        Reference: Wedding Gift
+      <p class="info-box">
+        Name: Kenia Lagunes Bank: BBVA CLABE: 123 456 78910111213 1 Account: 123 456 7891 Reference:
+        Wedding Gift
       </p>
 
-      <a
-        id="copyInfoBtn"
-        class="button"
-        type="button"
-        aria-label="Copy information"
-        >Copy Info</a
-      >
+      <a id="copyInfoBtn" class="button" type="button" aria-label="Copy information">Copy Info</a>
     </section>
 
     <!-- Timeline -->
@@ -135,8 +120,7 @@
     <section>
       <h2>Dress Code</h2>
       <p>
-        We kindly ask our guests NOT to wear ties, suits, or dresses in these
-        colors. Thank you!
+        We kindly ask our guests NOT to wear ties, suits, or dresses in these colors. Thank you!
       </p>
       <span class="circle" style="background: rgb(27, 27, 95)"></span>
       <span class="circle" style="background: rgb(71, 143, 98)"></span>
@@ -146,36 +130,38 @@
 
     <!-- Wish Wall -->
     <section>
-<div class="ww">
-  
-    <h2>Wishes for the Couple</h2>
-    <p>Leave a note for Kenia & David</p>
+      <div class="ww">
+        <h2>Wishes for the Couple</h2>
+        <p>Leave a note for Kenia & David</p>
 
-  <div class="form-card">
-    <div class="field-grid">
-      <div class="field">
-        <label for="name">Your name</label>
-        <input id="name" type="text" placeholder="e.g. Sarah" maxlength="60" />
+        <div class="form-card">
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="e.g. Sarah" maxlength="60" />
+            </div>
+            <div class="field">
+              <label for="relation">Relation (optional)</label>
+              <input id="relation" type="text" placeholder="e.g. Cousin" maxlength="60" />
+            </div>
+            <div class="field field-full">
+              <label for="message">Your wish</label>
+              <textarea
+                id="message"
+                placeholder="What would you like to say?"
+                maxlength="300"
+              ></textarea>
+            </div>
+          </div>
+          <button class="send-btn" id="ww-btn">Send Wish</button>
+        </div>
+
+        <div class="count" id="ww-count" style="display: none"></div>
+        <div class="grid" id="wishes"></div>
+        <!-- <div class="empty" id="ww-empty">Be the first to leave a wish</div> -->
       </div>
-      <div class="field">
-        <label for="relation">Relation (optional)</label>
-        <input id="relation" type="text" placeholder="e.g. Cousin" maxlength="60" />
-      </div>
-      <div class="field field-full">
-        <label for="message">Your wish</label>
-        <textarea id="message" placeholder="What would you like to say?" maxlength="300"></textarea>
-      </div>
-    </div>
-    <button class="send-btn" id="ww-btn">Send Wish</button>
-  </div>
 
-  <div class="count" id="ww-count" style="display:none"></div>
-  <div class="grid" id="wishes"></div>
-  <!-- <div class="empty" id="ww-empty">Be the first to leave a wish</div> -->
-</div>
-
-<div class="toast" id="toast"></div>
-
+      <div class="toast" id="toast"></div>
     </section>
 
     <footer>
