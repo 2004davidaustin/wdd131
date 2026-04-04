@@ -1,24 +1,39 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <link rel="stylesheet" href="styles/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/script.js" defer></script>
-    <title>Kenia & David | Reserva Tu Lugar</title>
+    <script src="scripts/main.js" defer></script>
+        <link rel="icon" href="images/favicon.ico" />
+    <title>Kenia & David | Reserve Your Spot</title>
   </head>
   <body>
-    <!-- <div id="background-flowers"></div> -->
-    <header>
-      <h3>K&D</h3>
-    </header>
+    <div id="background-flowers"></div>
+<header>
+  <div class="header-inner">
+    <h3>K&D</h3>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+  </div>
+</header>
+
+<!-- Nav tray sits outside header, right after it -->
+<div class="nav-overlay" id="nav-overlay"></div>
+<nav class="nav-tray" id="nav-tray" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+</nav>
 
     <!-- hero -->
     <section id="hero">
       <img
         id="hero-image"
         src="images/sitting1.JPG"
-        alt="Kenia y David sentados juntos sonriendo"
+        alt="Kenia and David sitting together smiling"
       />
     </section>
 
@@ -26,83 +41,90 @@
     <section id="title">
       <h1>Save the Date</h1>
       <h2>Kenia & David</h2>
-      <h3>22 Mayo 2026</h3>
+      <h3>May 22, 2026</h3>
 
-      <div class="divider" role="group" aria-label="Informacion y el registro">
-        <p class="divider_left">No faltes</p>
-        <div class="divider_sep" aria-hidden="true"></div>
+      <div class="divider" role="group" aria-label="Information and registration">
+        <p class="divider-left">Don't miss it</p>
+        <div class="divider-sep" aria-hidden="true"></div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSck1TxcxSh5nrD_irqT5JzRFoQWKRDHRcxrmbruNfkFg36U4Q/viewform?usp=sharing&ouid=109263298022398226812"
           target="_blank"
           rel="noopener"
-          class="divider_right button"
-          >Reserva tu lugar</a
+          class="divider-right button"
+          >Reserve Your Spot</a
         >
       </div>
 
       <p>
-        ¡Aquí puedes registrarte para la boda! Por favor confirma antes del 31
-        de marzo. ¡Gracias!
+        You can register for the wedding here! Please confirm before April 30th.
+        Thank you!
       </p>
+    </section>
+
+    <section>
+      <div class="cd-wrap">
+        <h2>Countdown</h2>
+        <div class="cd-label">May 22, 2026</div>
+        <div class="cd-grid" id="cd-grid"></div>
+      </div>
     </section>
 
     <!-- location -->
     <section id="location">
-      <h2>Ubicación</h2>
-      <p>El evento se llevará a cabo en el salón Punta Real</p>
+      <h2>Location</h2>
+      <p>The event will take place at Salón Punta Real:</p>
       <p>
         <em
-          >Constitución 7, Santa María Aztahuacán, Iztapalapa, 09500 Ciudad de
-          México.</em
+          >Constitución 7, Santa María Aztahuacán, Iztapalapa, 09500 Mexico
+          City.</em
         >
       </p>
-      <p>¡Allí les esperamos!</p>
+      <p>We'll be waiting for you there!</p>
 
       <!-- Existing street-view -->
       <div class="map-responsive">
         <iframe
-        title="Street View - Ubicación de la boda"
-        src="https://www.google.com/maps/embed?pb=!4v1771709099388!6m8!1m7!1sKDl511908x6v-BCTZTnovA!2m2!1d19.35219122052608!2d-99.02494536508144!3f268.7787947912388!4f0.49297449215615075!5f0.4000000000000002"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+          title="Street View - Wedding Venue Location"
+          src="https://www.google.com/maps/embed?pb=!4v1771709099388!6m8!1m7!1sKDl511908x6v-BCTZTnovA!2m2!1d19.35219122052608!2d-99.02494536508144!3f268.7787947912388!4f0.49297449215615075!5f0.4000000000000002"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      
 
       <a
         href="https://maps.app.goo.gl/Y2JHmAuzaDHehjKW6"
         target="_blank"
         rel="noopener"
         class="button"
-        >Abrir en Google Maps</a
+        >Open in Google Maps</a
       >
     </section>
 
     <!-- Gifts -->
     <section>
-      <h2>Regalos</h2>
+      <h2>Gifts</h2>
 
       <p>
-        Tu presencia es el mejor regalo. Sin embargo, si deseas apoyarnos, hemos
-        habilitado una cuenta bancaria para regalos de boda, ya que no viviremos
-        en México. Cualquier aportación en efectivo o por transferencia es muy
-        apreciada. ¡Gracias!
+        Your presence is the best gift. However, if you'd like to support us, we
+        have set up a bank account for wedding gifts, as we will not be living in
+        Mexico. Any cash contribution or bank transfer is greatly appreciated.
+        Thank you!
       </p>
 
-      <p class="info-box">Nombre: Kenia Lagunes
-        Banco: BBVA Cuenta
-        CLABE: 012 180 01548830608 3
-        Cuenta: 154 883 0608
-        Concepto: Regalo de Boda
+      <p class="info-box">Name: Kenia Lagunes
+        Bank: BBVA
+        CLABE: 123 456 78910111213 1
+        Account: 123 456 7891
+        Reference: Wedding Gift
       </p>
 
       <a
         id="copyInfoBtn"
         class="button"
         type="button"
-        aria-label="Copiar información"
-        >Copiar Info</a
+        aria-label="Copy information"
+        >Copy Info</a
       >
     </section>
 
@@ -111,15 +133,49 @@
 
     <!-- Dress Code -->
     <section>
-      <h2>Código de Vestimenta</h2>
+      <h2>Dress Code</h2>
       <p>
-        Solicitamos amablemente a nuestros invitados que NO LLEVEN corbatas,
-        trajes, ni vestidos de estos colores. ¡Gracias!
+        We kindly ask our guests NOT to wear ties, suits, or dresses in these
+        colors. Thank you!
       </p>
       <span class="circle" style="background: rgb(27, 27, 95)"></span>
       <span class="circle" style="background: rgb(71, 143, 98)"></span>
       <span class="circle" style="background: white"></span>
       <span class="circle" style="background: rgb(130, 130, 130)"></span>
+    </section>
+
+    <!-- Wish Wall -->
+    <section>
+<div class="ww">
+  
+    <h2>Wishes for the Couple</h2>
+    <p>Leave a note for Kenia & David</p>
+
+  <div class="form-card">
+    <div class="field-grid">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="e.g. Sarah" maxlength="60" />
+      </div>
+      <div class="field">
+        <label for="relation">Relation (optional)</label>
+        <input id="relation" type="text" placeholder="e.g. Cousin" maxlength="60" />
+      </div>
+      <div class="field field-full">
+        <label for="message">Your wish</label>
+        <textarea id="message" placeholder="What would you like to say?" maxlength="300"></textarea>
+      </div>
+    </div>
+    <button class="send-btn" id="ww-btn">Send Wish</button>
+  </div>
+
+  <div class="count" id="ww-count" style="display:none"></div>
+  <div class="grid" id="wishes"></div>
+  <!-- <div class="empty" id="ww-empty">Be the first to leave a wish</div> -->
+</div>
+
+<div class="toast" id="toast"></div>
+
     </section>
 
     <footer>
